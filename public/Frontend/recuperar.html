@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperación de Contraseña</title>
+    <link rel="stylesheet" href="./Css/app.css">
+</head>
+<body>
+    <h1>Recuperación de Contraseña</h1>
+    <h2>Por favor, ingresa tu correo electrónico y te enviaremos instrucciones para restablecer tu contraseña.</h2>
+    <div id="contRecCont_Registro">
+        <form>
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correoPasswordReset" name="correo" required>
+        </form>
+        <div id="contButtons1">
+            <button id="reset-password-button">Enviar Instrucciones</button>
+            <button id="Cancel-button">Cancelar</button>
+        </div>
+    </div>
+
+        <!-- Cuadro modal de error oculto inicialmente -->
+        <div id="modalError" class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar-modal" id="cerrarModal">&times;</span>
+                <p>ERROR</p>
+                <p>¡Usuario o contraseña No validos!</p>
+            </div>
+        </div>    
+
+        <!-- Cuadro modal de error oculto inicialmente -->
+        <div id="modalAcierto" class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar-modal" id="cerrarModalAcierto">&times;</span>
+                <p>Listo</p>
+                <p>¡Correo Enviado, Por favor revise su bandeja de entrada!</p>
+            </div>
+        </div>    
+
+</body>
+    <script type="module" src="../Backend/UserManager/app_password_reset.js"></script>
+</html>

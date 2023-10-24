@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Css/app.css">
+</head>
+<body>
+    <div id="container">
+        <h1>TEIWY</h1>
+        <h2>Explora, compra y vende</h2>
+        <div id="contRecCont">
+            <h3>Introduce tu correo electronico y contraseña</h3>
+            <form action="" class="formRecCont">
+                <div id="contCorreo">
+                    <label for="correo">Correo Electronico: </label>
+                    <input type="email" id="correoIngreso" placeholder="Ingrese su correo electronico">
+                    <br>
+                    <label for="correo">Contraseña: </label>
+                    <input type="password" id="contrasenaIngreso" placeholder="Ingrese su correo electronico">
+
+                    <p id="correoValido" class="parrafo">El correo ingresado es valido</p>
+                    <p id="correoInvalido" class="parrafo">El correo ingresado no es valido</p>
+                </div>
+            </form>
+            <div id="contButtons1">
+                <button id="login-button">Iniciar Sesion</button>
+                <button id="buttonRegistrarLogin">Registrarse</button>
+            </div>
+        </div>
+    </div>
+        <p><a href="recuperar.html">¿Olvidaste tu contraseña?</a></p>
+
+        <!-- Cuadro modal de error oculto inicialmente -->
+        <div id="modalError" class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar-modal" id="cerrarModal">&times;</span>
+                <p>ERROR</p>
+                <p>¡Usuario o contraseña No validos!</p>
+            </div>
+        </div>
+
+</body>
+    <script type="module" src="../Backend/UserManager/app_login.js"></script>
+</html>

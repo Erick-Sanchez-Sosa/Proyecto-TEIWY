@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <title>Document</title>
+</head>
+<script>
+    function preventBack(){window.history.forward();}
+    setTimeout("preventBack()", 0);
+    window.onunload=function(){null};
+  </script>
+  
+<body>
+    <label for="text" id="UserMenu" >User</label>
+    <br>
+    <label for="text" id="emailMenu" >User</label>
+    <br>
+    <input type="submit" id="editarPerfilMenuButton" value="Editar Perfil">
+    <br>
+    <input type="button" id="closeSession" value="Cerrar Sesión">
+</body>
+    <script type="module" src="../Backend/UserManager/app_user_observer.js"></script>
+    <script type="module" src="../Backend/UserManager/app__menu.js"></script>
+</html>

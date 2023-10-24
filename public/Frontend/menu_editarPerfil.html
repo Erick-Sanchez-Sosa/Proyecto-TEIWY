@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Perfil</title>
+    <link rel="stylesheet" href="./Css/CssModalPagNoEditados.css">
+</head>
+
+<body>
+    <h1>Editar Perfil</h1>
+    <form>
+
+        <label for="nombre">Nombre Actual: </label>
+        <label for="text" id="" >User</label>
+        <br>
+        
+
+        <label for="nombre">Nuevo Nombre:</label>
+        <input type="text" id="nombre" name="nombre" disabled="true">
+        <br>
+        
+        <label for="correo">Correo Electrónico Actual: </label>
+        <label for="text" id="UserMenu" ></label>
+        <br>
+
+        <label for="correo">Nuevo Correo Electrónico:</label>
+        <input type="email" id="correoRegistro" name="correo" disabled="true" >
+        <br>
+        
+        <h2>Cambiar contraseña</h2>
+
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="newContrasenaRegistro" name="contrasena" >
+        <br>
+        
+        <label for="confirmar_contrasena">Confirmar Contraseña:</label>
+        <input type="password" id="newconfirmar_contrasena" name="confirmar_contrasena" >
+        <br>
+        <input type="button" id="editarPerfil" value="Cambiar">
+    </form>
+    <button id="editarPerfilMenuButton">Regresar</button>
+
+    <!-- Cuadro modal de error oculto inicialmente -->
+        <div id="modalError" class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar-modal" id="cerrarModal">&times;</span>
+                <p>ERROR</p>
+                <p>¡Error al Cambiar la contraseña!</p>
+            </div>
+        </div>    
+
+    <!-- Cuadro modal de error oculto inicialmente -->
+        <div id="modalAcierto" class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar-modal" id="cerrarModalAcierto">&times;</span>
+                <p>Listo</p>
+                <p>¡Contraseña Actualizada!</p>
+            </div>
+        </div>  
+
+</body>
+    <script type="module" src="../Backend/UserManager/app_user_editor_menu.js"></script>
+</html>
